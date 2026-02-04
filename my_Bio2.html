@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal bio website of Misheck Phiri">
+    <meta name="author" content="Misheck Phiri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misheck Phiri | Personal Bio</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        /* Header */
+        header {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            transition: background-color 0.5s;
+        }
+
+        header:hover {
+            background-color: #3498db;
+        }
+
+        header em {
+            font-style: italic;
+        }
+
+        /* Main Layout */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Flex for Profile Picture + Table */
+        #profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        #profile-section img {
+            border-radius: 50%;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+
+        #profile-section img:hover {
+            transform: scale(1.05);
+        }
+
+        #personal-details {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        /* Aside */
+        aside {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #2980b9;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        aside:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+            transition: background-color 0.5s;
+        }
+
+        footer:hover {
+            background-color: #34495e;
+        }
+
+        /* Audio */
+        audio {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Misheck Phiri</h1>
+        <p><em>Aspiring Web Developer & Tech Enthusiast</em></p>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Section 1: Profile Picture + Personal Details -->
+        <section id="profile-section">
+            <img src="misheck.jpg" alt="Profile picture of Misheck Phiri">
+            
+            <div id="personal-details">
+                <h2>Personal Details</h2>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Misheck Phiri</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><time datetime="2007-03-14">14 March 2007</time></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>1152 Nyathi Street, Bindura</td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>Zimbabwean</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Bio -->
+        <section>
+            <h2>My Bio</h2>
+            <article>
+                <p>
+                    My name is <strong>Misheck Phiri</strong>. I am a young and passionate learner with a strong interest in web development and technology. I enjoy learning how software systems are built and how technology can be used to solve real-world problems.
+                </p>
+            </article>
+        </section>
+
+        <!-- Section 3: Interests & Skills -->
+        <section>
+            <h2>Interests, Hobbies & Skills</h2>
+            <article>
+                <h3>Interests & Hobbies</h3>
+                <ul>
+                    <li>Programming and Software Development</li>
+                    <li>Learning new technologies</li>
+                    <li>Problem solving</li>
+                    <li>Exploring computers and systems</li>
+                </ul>
+
+                <h3>Skills</h3>
+                <ul>
+                    <li>Basic HTML</li>
+                    <li>Python programming</li>
+                    <li>Problem analysis</li>
+                    <li>Computer literacy</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Section 4: Career Goals & Media -->
+        <section>
+            <h2>Career Goals & Media</h2>
+            <article>
+                <p>
+                    My goal is to become a skilled software developer and contribute to building useful systems for education, health, and community development.
+                </p>
+                <p>Listen to one of my favourite motivational tracks:</p>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+        </section>
+
+        <!-- Section 5: Aside - Quick Note -->
+        <aside>
+            <h3>Quick Note</h3>
+            <p>
+                I believe in hard work, consistency &amp; continuous learning.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Misheck Phiri | Personal Bio Website</p>
+    </footer>
+
+</body>
+</html>
